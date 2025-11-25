@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+   <script>
+   function myFunction() {
+   var str = "My son is 12 years old. Our flat number is 45 and contact is 9876543210.";
+   var patt1=(/"number"|["0-9"]/ig);
+   var result = str.replace(patt1,"number");
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+</body>  
+</html>
